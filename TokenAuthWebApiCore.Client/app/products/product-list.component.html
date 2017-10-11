@@ -1,0 +1,41 @@
+<div class="panel panel-success">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table"
+                   *ngIf="products && products.length">
+                <thead>
+                    <tr>
+                        <th>Batch_Id</th>
+                        <th>Batch Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products ">
+                        <td>
+                            {{product.Id}}
+                        </td>
+                        <td>
+                            {{product.Batch_Name}}
+                        </td>
+                        <td>{{ product.Description  }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
