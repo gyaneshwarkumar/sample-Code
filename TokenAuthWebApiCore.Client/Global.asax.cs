@@ -1,4 +1,4 @@
-﻿namespace TokenAuthWebApiCore.Client
+﻿namespace MasterWebApiCore.Client
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

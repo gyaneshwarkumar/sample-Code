@@ -1,0 +1,10 @@
+C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\Master.WebApiCore.csproj.CoreCompileInputs.cache
+C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\Master.WebApiCore.AssemblyInfoInputs.cache
+C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\Master.WebApiCore.AssemblyInfo.cs
+C:\test\test\TokenAuthWebApiCore.Server\bin\Debug\netcoreapp1.1\Master.WebApiCore.deps.json
+C:\test\test\TokenAuthWebApiCore.Server\bin\Debug\netcoreapp1.1\Master.WebApiCore.runtimeconfig.json
+C:\test\test\TokenAuthWebApiCore.Server\bin\Debug\netcoreapp1.1\Master.WebApiCore.runtimeconfig.dev.json
+C:\test\test\TokenAuthWebApiCore.Server\bin\Debug\netcoreapp1.1\Master.WebApiCore.dll
+C:\test\test\TokenAuthWebApiCore.Server\bin\Debug\netcoreapp1.1\Master.WebApiCore.pdb
+C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\Master.WebApiCore.dll
+C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\Master.WebApiCore.pdb

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace TokenAuthWebApiCore.Server.Models
+namespace MasterWebApiCore.Server.Models
 
 {
     public class Batch

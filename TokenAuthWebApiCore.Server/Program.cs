@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 
-namespace TokenAuthWebApiCore.Server
+namespace MasterWebApiCore.Server
 {
     public class Program
     {

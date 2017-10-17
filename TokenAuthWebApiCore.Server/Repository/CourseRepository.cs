@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TokenAuthWebApiCore.Server.Models;
+using MasterWebApiCore.Server.Models;
 
 
-namespace TokenAuthWebApiCore.Server.Repository
+namespace MasterWebApiCore.Server.Repository
 {
 
 

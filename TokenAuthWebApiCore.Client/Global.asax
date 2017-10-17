@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TokenAuthWebApiCore.Client.WebApiApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="MasterWebApiCore.Client.WebApiApplication" Language="C#" %>

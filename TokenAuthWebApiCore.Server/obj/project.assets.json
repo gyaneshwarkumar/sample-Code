@@ -10567,9 +10567,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\test\\test\\TokenAuthWebApiCore.Server\\TokenAuthWebApiCore.Server.csproj",
-      "projectName": "TokenAuthWebApiCore.Server",
-      "projectPath": "C:\\test\\test\\TokenAuthWebApiCore.Server\\TokenAuthWebApiCore.Server.csproj",
+      "projectUniqueName": "C:\\test\\test\\TokenAuthWebApiCore.Server\\MasterWebApiCore.csproj",
+      "projectName": "MasterWebApiCore",
+      "projectPath": "C:\\test\\test\\TokenAuthWebApiCore.Server\\MasterWebApiCore.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
       "outputPath": "C:\\test\\test\\TokenAuthWebApiCore.Server\\obj\\",
       "projectStyle": "PackageReference",

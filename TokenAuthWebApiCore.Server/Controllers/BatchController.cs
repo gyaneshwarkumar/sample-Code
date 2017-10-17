@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using TokenAuthWebApiCore.Server.Repository;
-using TokenAuthWebApiCore.Server.Models;
+using MasterWebApiCore.Server.Repository;
+using MasterWebApiCore.Server.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace TokenAuthWebApiCore.Server.Controllers
+namespace MasterWebApiCore.Server.Controllers
 {
     [Route("api/[controller]")]
     [Authorize]

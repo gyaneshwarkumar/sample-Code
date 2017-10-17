@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TokenAuthWebApiCore.Server.Repository
+namespace MasterWebApiCore.Server.Repository
 {
     public interface IDataAccess<TEntity, U> where TEntity : class
     {

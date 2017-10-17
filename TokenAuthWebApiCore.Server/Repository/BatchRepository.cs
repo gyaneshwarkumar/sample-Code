@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TokenAuthWebApiCore.Server.Models;
+using MasterWebApiCore.Server.Models;
 
-namespace TokenAuthWebApiCore.Server.Repository
+namespace MasterWebApiCore.Server.Repository
 {
     public class BatchRepository:IDataAccess<Batch,int>
     {

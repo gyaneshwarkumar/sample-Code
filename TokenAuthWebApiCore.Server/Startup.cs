@@ -8,10 +8,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Threading.Tasks;
-using TokenAuthWebApiCore.Server.Models;
-using TokenAuthWebApiCore.Server.Repository;
+using MasterWebApiCore.Server.Models;
+using MasterWebApiCore.Server.Repository;
 
-namespace TokenAuthWebApiCore.Server
+namespace MasterWebApiCore
 {
     public class Startup
     {
@@ -38,24 +38,24 @@ namespace TokenAuthWebApiCore.Server
             services.AddMvc();
             SetUpDataBase(services);
 
-            services.AddIdentity<MyUser, MyRole>(cfg =>
-            {
-                // if we are accessing the /api and an unauthorized request is made
-                // do not redirect to the login page, but simply return "Unauthorized"
-                cfg.Cookies.ApplicationCookie.Events = new CookieAuthenticationEvents
-                {
-                    OnRedirectToLogin = ctx =>
-                    {
-                        if (ctx.Request.Path.StartsWithSegments("/api"))
-                            ctx.Response.StatusCode = (int)System.Net.HttpStatusCode.Unauthorized;
+            //services.AddIdentity<MyUser, MyRole>(cfg =>
+            //{
+            //    // if we are accessing the /api and an unauthorized request is made
+            //    // do not redirect to the login page, but simply return "Unauthorized"
+            //    cfg.Cookies.ApplicationCookie.Events = new CookieAuthenticationEvents
+            //    {
+            //        OnRedirectToLogin = ctx =>
+            //        {
+            //            if (ctx.Request.Path.StartsWithSegments("/api"))
+            //                ctx.Response.StatusCode = (int)System.Net.HttpStatusCode.Unauthorized;
 
-                        return Task.FromResult(0);
-                    }
-                };
-            }).AddEntityFrameworkStores<SecurityContext>()
-            .AddDefaultTokenProviders();
+            //            return Task.FromResult(0);
+            //        }
+            //    };
+            //}).AddEntityFrameworkStores<SecurityContext>()
+            //.AddDefaultTokenProviders();
 
-            services.AddTransient<ProductRepository, ProductRepository>();
+           // services.AddTransient<ProductRepository, ProductRepository>();
 
             services.AddCors(cfg =>
             {
@@ -83,13 +83,13 @@ namespace TokenAuthWebApiCore.Server
             services.AddSingleton(typeof(IDataAccess<Batch, int>), typeof(BatchRepository));
 
             services.AddDbContext<SecurityContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection"), sqlOptions => sqlOptions.MigrationsAssembly("TokenAuthWebApiCore.Server")));
+            options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection"), sqlOptions => sqlOptions.MigrationsAssembly("MasterWebApiCore")));
         }
 
         public virtual void EnsureDatabaseCreated(SecurityContext dbContext)
         {
             // run Migrations
-            dbContext.Database.Migrate();
+           dbContext.Database.Migrate();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -97,7 +97,7 @@ namespace TokenAuthWebApiCore.Server
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            app.UseIdentity();
+           /// app.UseIdentity();
 
             app.UseJwtBearerAuthentication(new JwtBearerOptions()
             {

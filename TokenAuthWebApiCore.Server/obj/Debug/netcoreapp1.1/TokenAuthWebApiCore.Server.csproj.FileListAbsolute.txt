@@ -8,4 +8,3 @@ C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\TokenAuthWebApiC
 C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\TokenAuthWebApiCore.Server.AssemblyInfo.cs
 C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\TokenAuthWebApiCore.Server.dll
 C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\TokenAuthWebApiCore.Server.pdb
-C:\test\test\TokenAuthWebApiCore.Server\obj\Debug\netcoreapp1.1\TokenAuthWebApiCore.Server.csprojResolveAssemblyReference.cache
