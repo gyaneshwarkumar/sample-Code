@@ -10567,9 +10567,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\test\\test\\WebApiCore.Server\\WebApiCore.Server.csproj",
-      "projectName": "WebApiCore.Server",
-      "projectPath": "C:\\test\\test\\WebApiCore.Server\\WebApiCore.Server.csproj",
+      "projectUniqueName": "C:\\test\\test\\WebApiCore.Server\\Token.WebApiCore.Server.csproj",
+      "projectName": "Token.WebApiCore.Server",
+      "projectPath": "C:\\test\\test\\WebApiCore.Server\\Token.WebApiCore.Server.csproj",
       "packagesPath": "C:\\Users\\Gyaneshwar\\.nuget\\packages\\",
       "outputPath": "C:\\test\\test\\WebApiCore.Server\\obj\\",
       "projectStyle": "PackageReference",

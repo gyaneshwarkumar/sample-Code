@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebApiCore.Server.Models;
+using Token.WebApiCore.Server.Models;
 
-namespace WebApiCore.Server
+
+namespace Token.WebApiCore.Server
 {
     public class SecurityContext : IdentityDbContext<MyUser>
     {

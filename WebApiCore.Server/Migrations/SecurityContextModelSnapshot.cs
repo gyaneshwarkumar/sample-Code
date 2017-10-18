@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using WebApiCore.Server;
+using Token.WebApiCore.Server;
 
-namespace WebApiCore.Server.Migrations
+namespace Token.WebApiCore.Server.Migrations
 {
     [DbContext(typeof(SecurityContext))]
     partial class SecurityContextModelSnapshot : ModelSnapshot
@@ -123,7 +123,7 @@ namespace WebApiCore.Server.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("WebApiCore.Server.Models.MyUser", b =>
+            modelBuilder.Entity("Token.WebApiCore.Server.Models.MyUser", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -189,7 +189,7 @@ namespace WebApiCore.Server.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("WebApiCore.Server.Models.MyUser")
+                    b.HasOne("Token.WebApiCore.Server.Models.MyUser")
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -197,7 +197,7 @@ namespace WebApiCore.Server.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("WebApiCore.Server.Models.MyUser")
+                    b.HasOne("Token.WebApiCore.Server.Models.MyUser")
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -210,7 +210,7 @@ namespace WebApiCore.Server.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("WebApiCore.Server.Models.MyUser")
+                    b.HasOne("Token.WebApiCore.Server.Models.MyUser")
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

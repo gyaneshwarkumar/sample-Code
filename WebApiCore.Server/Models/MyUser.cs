@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 
-namespace WebApiCore.Server.Models
+namespace Token.WebApiCore.Server.Models
 {
     public class MyUser : IdentityUser
     {

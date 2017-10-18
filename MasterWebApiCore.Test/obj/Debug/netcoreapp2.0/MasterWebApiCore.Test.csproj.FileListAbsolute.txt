@@ -1,0 +1,14 @@
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\MasterWebApiCore.Test.deps.json
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\MasterWebApiCore.Test.runtimeconfig.json
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\MasterWebApiCore.Test.runtimeconfig.dev.json
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\MasterWebApiCore.Test.dll
+C:\test\test\MasterWebApiCore.Test\bin\Debug\netcoreapp2.0\MasterWebApiCore.Test.pdb
+C:\test\test\MasterWebApiCore.Test\obj\Debug\netcoreapp2.0\MasterWebApiCore.Test.csproj.CoreCompileInputs.cache
+C:\test\test\MasterWebApiCore.Test\obj\Debug\netcoreapp2.0\MasterWebApiCore.Test.AssemblyInfoInputs.cache
+C:\test\test\MasterWebApiCore.Test\obj\Debug\netcoreapp2.0\MasterWebApiCore.Test.AssemblyInfo.cs
+C:\test\test\MasterWebApiCore.Test\obj\Debug\netcoreapp2.0\MasterWebApiCore.Test.dll
+C:\test\test\MasterWebApiCore.Test\obj\Debug\netcoreapp2.0\MasterWebApiCore.Test.pdb
+C:\test\test\MasterWebApiCore.Test\obj\Debug\netcoreapp2.0\MasterWebApiCore.Test.csprojResolveAssemblyReference.cache

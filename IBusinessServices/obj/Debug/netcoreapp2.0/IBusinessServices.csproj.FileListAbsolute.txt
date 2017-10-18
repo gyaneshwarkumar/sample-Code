@@ -1,0 +1,11 @@
+C:\test\test\IBusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.deps.json
+C:\test\test\IBusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.dll
+C:\test\test\IBusinessServices\bin\Debug\netcoreapp2.0\IBusinessServices.pdb
+C:\test\test\IBusinessServices\bin\Debug\netcoreapp2.0\OA.Data.dll
+C:\test\test\IBusinessServices\bin\Debug\netcoreapp2.0\OA.Data.pdb
+C:\test\test\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.csprojResolveAssemblyReference.cache
+C:\test\test\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.csproj.CoreCompileInputs.cache
+C:\test\test\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.AssemblyInfoInputs.cache
+C:\test\test\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.AssemblyInfo.cs
+C:\test\test\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.dll
+C:\test\test\IBusinessServices\obj\Debug\netcoreapp2.0\IBusinessServices.pdb

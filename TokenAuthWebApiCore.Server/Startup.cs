@@ -8,8 +8,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Threading.Tasks;
-using MasterWebApiCore.Server.Models;
-using MasterWebApiCore.Server.Repository;
+using OA.Repo;
+using OA.Service;
 
 namespace MasterWebApiCore
 {
@@ -35,6 +35,12 @@ namespace MasterWebApiCore
         {
             services.AddSingleton(Configuration);
             // Add framework services.
+
+            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection")));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient<ICoursService, CoursService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserProfileService, UserProfileService>();
             services.AddMvc();
             SetUpDataBase(services);
 
@@ -62,7 +68,7 @@ namespace MasterWebApiCore
                 cfg.AddPolicy("AnyGET", bldr =>
                 {
                     bldr.AllowAnyHeader()
-                        .WithMethods("GET")
+                        .WithMethods("GET", "PUT", "POST", "DELETE")
                         .AllowAnyOrigin();
                 });
 
@@ -79,18 +85,18 @@ namespace MasterWebApiCore
         {
             //services.AddDbContext<ApplicationContext>(opts =>
             //   opts.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
-            services.AddSingleton(typeof(IDataAccess<Course, int>), typeof(CourseRepository));
-            services.AddSingleton(typeof(IDataAccess<Batch, int>), typeof(BatchRepository));
+            //services.AddSingleton(typeof(IDataAccess<Course, int>), typeof(CourseRepository));
+            //services.AddSingleton(typeof(IDataAccess<Batch, int>), typeof(BatchRepository));
 
-            services.AddDbContext<SecurityContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection"), sqlOptions => sqlOptions.MigrationsAssembly("MasterWebApiCore")));
+            //services.AddDbContext<SecurityContext>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection"), sqlOptions => sqlOptions.MigrationsAssembly("MasterWebApiCore")));
         }
 
-        public virtual void EnsureDatabaseCreated(SecurityContext dbContext)
-        {
-            // run Migrations
-           dbContext.Database.Migrate();
-        }
+        //public virtual void EnsureDatabaseCreated(SecurityContext dbContext)
+        //{
+        //    // run Migrations
+        //   dbContext.Database.Migrate();
+        //}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -119,12 +125,12 @@ namespace MasterWebApiCore
             });
 
             // within your Configure method:
-            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
-              .CreateScope())
-            {
-                var dbContext = serviceScope.ServiceProvider.GetService<SecurityContext>();
-                EnsureDatabaseCreated(dbContext);
-            }
+            //using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
+            //  .CreateScope())
+            //{
+            //    var dbContext = serviceScope.ServiceProvider.GetService<SecurityContext>();
+            //    EnsureDatabaseCreated(dbContext);
+            //}
         }
     }
 }

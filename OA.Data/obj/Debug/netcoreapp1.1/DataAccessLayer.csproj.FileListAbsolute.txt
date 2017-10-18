@@ -1,0 +1,8 @@
+C:\test\test\OA.Data\bin\Debug\netcoreapp1.1\OA.Data.deps.json
+C:\test\test\OA.Data\bin\Debug\netcoreapp1.1\OA.Data.dll
+C:\test\test\OA.Data\bin\Debug\netcoreapp1.1\OA.Data.pdb
+C:\test\test\OA.Data\obj\Debug\netcoreapp1.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\test\test\OA.Data\obj\Debug\netcoreapp1.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\test\test\OA.Data\obj\Debug\netcoreapp1.1\DataAccessLayer.AssemblyInfo.cs
+C:\test\test\OA.Data\obj\Debug\netcoreapp1.1\OA.Data.dll
+C:\test\test\OA.Data\obj\Debug\netcoreapp1.1\OA.Data.pdb

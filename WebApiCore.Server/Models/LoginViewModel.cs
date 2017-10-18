@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApiCore.Server.Models
+namespace Token.WebApiCore.Server.Models
 {
     public class LoginViewModel
     {

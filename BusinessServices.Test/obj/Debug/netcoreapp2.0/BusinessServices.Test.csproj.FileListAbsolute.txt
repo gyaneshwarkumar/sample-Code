@@ -1,0 +1,14 @@
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.deps.json
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.runtimeconfig.json
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.runtimeconfig.dev.json
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.dll
+C:\test\test\BusinessServices.Test\bin\Debug\netcoreapp2.0\BusinessServices.Test.pdb
+C:\test\test\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.csproj.CoreCompileInputs.cache
+C:\test\test\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.AssemblyInfoInputs.cache
+C:\test\test\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.AssemblyInfo.cs
+C:\test\test\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.dll
+C:\test\test\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.pdb
+C:\test\test\BusinessServices.Test\obj\Debug\netcoreapp2.0\BusinessServices.Test.csprojResolveAssemblyReference.cache

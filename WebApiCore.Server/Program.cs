@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Token.WebApiCore.Server;
 
-namespace WebApiCore.Server
+namespace Token.WebApiCore.Server
 {
     public class Program
     {

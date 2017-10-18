@@ -37,7 +37,7 @@ C:\test\test\TokenAuthWebApiCore.Client\bin\Newtonsoft.Json.xml
 C:\test\test\TokenAuthWebApiCore.Client\bin\System.Net.Http.Formatting.xml
 C:\test\test\TokenAuthWebApiCore.Client\bin\System.Web.Http.xml
 C:\test\test\TokenAuthWebApiCore.Client\bin\System.Web.Http.WebHost.xml
-C:\test\test\TokenAuthWebApiCore.Client\obj\Debug\Angular2.Client.csprojResolveAssemblyReference.cache
 C:\test\test\TokenAuthWebApiCore.Client\obj\Debug\Angular2.Client.csproj.CoreCompileInputs.cache
 C:\test\test\TokenAuthWebApiCore.Client\obj\Debug\TokenAuthWebApiCore.Client.dll
 C:\test\test\TokenAuthWebApiCore.Client\obj\Debug\TokenAuthWebApiCore.Client.pdb
+C:\test\test\TokenAuthWebApiCore.Client\obj\Debug\Angular2.Client.csprojResolveAssemblyReference.cache

@@ -8,9 +8,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Threading.Tasks;
-using WebApiCore.Server.Models;
+using Token.WebApiCore.Server.Models;
 
-namespace WebApiCore.Server
+
+namespace Token.WebApiCore.Server
 {
     public class Startup
     {
@@ -76,19 +77,15 @@ namespace WebApiCore.Server
 
         public virtual void SetUpDataBase(IServiceCollection services)
         {
-            //services.AddDbContext<ApplicationContext>(opts =>
-            //   opts.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
-          //  services.AddSingleton(typeof(IDataAccess<Course, int>), typeof(CourseRepository));
-          //  services.AddSingleton(typeof(IDataAccess<Batch, int>), typeof(BatchRepository));
 
             services.AddDbContext<SecurityContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection"), sqlOptions => sqlOptions.MigrationsAssembly("WebApiCore.Server")));
+            options.UseSqlServer(Configuration.GetConnectionString("SecurityConnection"), sqlOptions => sqlOptions.MigrationsAssembly("Token.WebApiCore.Server")));
         }
 
         public virtual void EnsureDatabaseCreated(SecurityContext dbContext)
         {
             // run Migrations
-           dbContext.Database.Migrate();
+         //  dbContext.Database.Migrate();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
